@@ -1,0 +1,26 @@
+.info-section{
+    
+}
+body{
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.set-sections{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+@media screen and (max-width: 767px) {
+    .set-sections{
+        display: block;
+    }
+}

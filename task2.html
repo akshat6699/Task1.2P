@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TASK 2</title>
+</head>
+<body>  
+    
+     <h1>STRING METHODS </h1>
+
+    <script>
+    var text = "JavaScript is a great language";
+    document.write(text + "<br><br>");
+
+     // length method
+    var a = text.length;
+     document.write("length of this is:  " + a + "<br>");
+
+      // tolowercase method
+    var a = text.toLowerCase();
+    document.write("lowercase:   " + a + "<br>");
+
+     // touppercase method
+    var a = text.toUpperCase();
+    document.write("uppercase:   " + a + "<br>");
+
+    // includes  method
+    var a = text.includes("language");
+    document.write("include method:  " + a + "<br>");
+     
+       //  search the position of word 
+    var a = text.search("great");
+    document.write("search the word (great) position:  " + a + "<br>");
+    </script>
+
+
+
+<h1>NUMBER METHODS</h1>
+    <script>
+var a = "99.99"; 
+document.write("taken number " + a + "<br> <br>");
+
+   // number methods
+var num = Number(a);
+document.write("Number method: " + num +"<br>");
+  //  parseInt method
+var num = parseInt(a);
+document.write("parseInt method: " + num+"<br>");
+//  parseFloat method
+var num = parseFloat(a);
+document.write("parsefloat method: " +num+"<br>"); 
+//  isFinite method
+var num = isFinite(a);
+document.write("is finite method: " +num+"<br>");
+//  isInteger method
+var num = Number.isInteger(a);
+document.write("isInteger method: " +num +"<br>");
+ </script>
+
+
+<h1>DATE METHODS</h1>
+<script>
+var now = new Date();                   //  toDateString method
+
+document.write("Today's date and day " + now.toDateString()+ "<br>");                  
+//  getDate method
+document.write("get today's date " + now.getDate()+ "<br>");
+//  getHours method
+document.write("get hours " + now.getHours()+ "<br>");
+//  getMonth method
+document.write("month : " + now.getMonth()+ "<br>");
+//  getDay method
+document.write("Day:  " + now.getDay()+ "<br>");
+</script>
+
+<h2>Array Methods</h2>
+<script>
+    var myArray = ["apple", "banana", "orange", "peach", "tomato"];
+    document.writeln(myArray + "<br>");
+    // pop method
+    document.writeln("pop from this is : " + myArray.pop() +"<br>");
+    //push method
+    document.writeln("push method  : " + myArray.push("suri") +"<br>");
+    document.writeln(myArray + "<br>");
+    //shift method
+    document.writeln("shift method  : " + myArray.shift() +"<br>");
+ //unshift method
+ document.writeln("unshift method  : " + myArray.unshift("suraksha") +"<br>");
+ document.writeln(myArray + "<br>");
+ //length method
+ document.writeln("length method  : " + myArray.length +"<br>");
+</script>
+
+<h2>Javascript functions</h2>
+<button onclick="myFunction1()" > alert</button>
+<script>
+    // alert function
+    function myFunction1(){
+        alert("hello student");
+    }
+
+    // function to celsius
+    function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+document.writeln(" 20 in celsius will be " + toCelsius(20) + "<br>");
+
+// multiplication function
+
+function myFunction(a, b) {
+  return a * b;
+}
+document.writeln(" multiplication of 10 and 30 is:  " + myFunction(10,30) + "<br>");
+
+
+// addition function
+
+function myFunction(a, b) {
+  return a + b;
+}
+document.writeln(" addition of 10 and 30 is:  " + myFunction(10,30) + "<br>");
+
+
+// subtraction function
+
+function myFunction(a, b) {
+  return a - b;
+}
+document.writeln(" subtraction of 10 and 30 is:  " + myFunction(10,30) + "<br>");
+
+</script>
+
+</body>
+</html>
